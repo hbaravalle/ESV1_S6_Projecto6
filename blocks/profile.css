@@ -30,6 +30,7 @@
   background: none;
   padding: 7px;
   border: 1px solid #fff;
+  cursor: pointer;
 }
 
 .profile__edit-button-icon::after {
@@ -52,6 +53,7 @@
   border: 2px solid #fff;
   width: 150px;
   padding: 14px;
+  cursor: pointer;
 }
 .profile__add-button-icon::after {
   content: "";

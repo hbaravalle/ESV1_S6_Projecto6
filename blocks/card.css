@@ -2,6 +2,7 @@
   height: 360px;
   border-radius: 10px;
   overflow: hidden;
+  cursor: pointer;
 }
 .card__image {
   width: 100%;
@@ -36,4 +37,8 @@
   display: block;
   background-image: url("../images/like.svg");
   background-size: 100% 100%;
+  cursor: pointer;
+}
+.card__like-button-icon--active {
+  background-image: url("../images/like-active.svg");
 }
