@@ -1,5 +1,6 @@
 .card {
   height: 360px;
+  position: relative;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -24,6 +25,24 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.card__delete-button {
+  position: absolute;
+  right: 12px;
+  top: 15px;
+  background: none;
+  border: none;
+  background-color: red;
+}
+.card__delete-button-icon {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  background-image: url("../images/trashcan.svg");
+  background-size: 100% 100%;
+  cursor: pointer;
+  z-index: 1000;
 }
 .card__like-button {
   background: none;

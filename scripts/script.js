@@ -62,10 +62,20 @@ function addNewPlace(nameValue, linkValue) {
   cardElement
     .querySelector(".card__like-button")
     .addEventListener("click", function (event) {
-      event.stopPropagation()
+      event.stopPropagation();
       event.target.classList.toggle("card__like-button-icon--active");
     });
+  cardElement
+    .querySelector(".card__delete-button")
+    .addEventListener("click", function (event) {
+      event.stopPropagation();
+      deletePlace(event);
+    });
   cardsContainer.prepend(cardElement);
+}
+
+function deletePlace(event) {
+  event.target.closest(".card").remove();
 }
 
 function editProfile(nameValue, AboutMeValue) {
